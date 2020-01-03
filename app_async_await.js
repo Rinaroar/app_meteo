@@ -63,6 +63,21 @@ function displayWeatherInfos(data){
   document.body.className = conditions.toLowerCase();
 }
 
+// Editer le H1
+const ville = document.querySelector('#ville');
+
+ville.addEventListener('click',() => {
+  ville.contentEditable = true;
+});
+
+// Bind de ENTER
+ville.addEventListener('keydown', (e) => { //fonction qui prend en parametre l'evenement
+  if(e.keyCode === 13) //seulement pour le bouton ENTER qui a le code 13 (keycode.io)
+  e.preventDefault(); //retire l'event par defaut de la touche (ici, aller à la ligne)
+  ville.contentEditable = false;  // on arrête d'éditer
+  //on rappel la fonction main ?
+})
+
 main();
 
 
