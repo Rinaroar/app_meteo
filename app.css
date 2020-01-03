@@ -46,19 +46,20 @@ h2{
 }
 
 .tooltip{
- opacity: 0;
- position: absolute;
- top: 0px;
- left: 63px;
- color: #FFFF;
- background-color: #222;
- border-radius: 5px;
- padding: 10px;
- font-size: 12px;
- transition: opacity .3s, top .5s;
-}
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 63px;
+  color: #FFFF;
+  background-color: #222;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  transition: opacity .3s, top .5s;
+ }
 
-h1:hover .tooltip {
-  top: -40px;
-  opacity: 1;
-}
+ h1:hover .tooltip {
+   top: -40px;
+   opacity: 1;
+ }
+
